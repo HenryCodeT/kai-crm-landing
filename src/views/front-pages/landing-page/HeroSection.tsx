@@ -33,13 +33,10 @@ const HeroSection = ({ mode }: { mode: Mode }) => {
   const dashboardImageDark = '/images/front-pages/landing-page/hero-dashboard-dark.png'
   const elementsImageLight = '/images/front-pages/landing-page/hero-elements-light.png'
   const elementsImageDark = '/images/front-pages/landing-page/hero-elements-dark.png'
-  const heroSectionBgLight = '/images/front-pages/landing-page/hero-bg-light.png'
-  const heroSectionBgDark = '/images/front-pages/landing-page/hero-bg-dark.png'
 
   // Hooks
   const dashboardImage = useImageVariant(mode, dashboardImageLight, dashboardImageDark)
   const elementsImage = useImageVariant(mode, elementsImageLight, elementsImageDark)
-  const heroSectionBg = useImageVariant(mode, heroSectionBgLight, heroSectionBgDark)
   const isAboveLgScreen = useMediaQuery((theme: Theme) => theme.breakpoints.up('lg'))
 
   useEffect(() => {
